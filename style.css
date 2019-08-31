@@ -1,0 +1,120 @@
+body {
+    background-color: #f8f9fa !important;
+}
+
+#timeline {
+    width: 100%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10em;
+}
+#timeline a {
+    text-decoration: none;
+}
+#timeline .listing {
+    background-color: white;
+    margin: auto;
+    border: 1px solid gainsboro;
+    border-radius: 0.3em;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: relative;
+    z-index: 1;
+    display: table;
+    transition: all 0.3s ease-in-out;
+}
+#timeline .listing img, #timeline .listing .info, #timeline .listing .job_type {
+    display: table-cell;
+    vertical-align: middle;
+}
+#timeline .listing .image_wrapper {
+    width: 60px;
+}
+#timeline .listing .image_wrapper img {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0.25em;
+}
+#timeline .listing .info {
+    line-height: 1.25em;
+    width: 640px;
+    padding-left: 25px;
+}
+#timeline .listing .info .job_title {
+    font-weight: 600;
+    color: #566270;
+    opacity: 0.7;
+    line-height: 1.6em;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+}
+#timeline .listing .info .job_info {
+    color: black;
+    display: block;
+}
+#timeline .listing .info .job_info span {
+    margin: 0 0.7em;
+}
+#timeline .listing .job_type {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75em;
+    position: relative;
+    white-space: nowrap;
+    padding: 0.6em;
+    width: 100px;
+}
+#timeline .listing .job_type:before {
+    content: " ";
+    background: blue;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    left: -20px;
+    top: 25px;
+}
+#timeline .listing .full-time {
+    color: red;
+}
+#timeline .listing .full-time:before {
+    background-color: red;
+}
+#timeline .listing .part-time {
+    color: blue;
+}
+#timeline .listing .part-time:before {
+    background-color: blue;
+}
+#timeline .listing .freelance {
+    color: yello;
+}
+#timeline .listing .freelance:before {
+    background-color: yellow;
+}
+#timeline .listing .contract {
+    color: purple;
+}
+#timeline .listing .contract:before {
+    background-color: purple;
+}
+#timeline .listing .scholarship_filter {
+    color: green;
+}
+#timeline .listing .scholarship_filter:before {
+    background-color: green;
+}
+#timeline .listing:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, .3);
+}
+
+#timeline {
+    margin: auto;
+}
+
+.jobs_page {
+    padding: 3em;
+}
